@@ -1,0 +1,147 @@
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bangers', Arial, sans-serif;
+    background-color: #ffffff; 
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-image: url('hellokit.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.logo h1 {
+    font-family: 'Bokor', Arial, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: black; /* Cor preta */
+}
+
+.logo:hover h1 {
+    opacity: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black; /* Texto preto */
+    font-size: 16px;
+}
+
+/* Conteúdo principal */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente */
+    padding: 40px;
+    height: calc(100vh - 80px); /* Altura da tela menos o cabeçalho */
+    gap: 40px; /* Espaçamento entre as colunas */
+}
+
+/* Informações de contato */
+.contact-info {
+    width: 30%; /* Reduz a largura para posicionar melhor */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-right: auto; /* Empurra a parte de contato para o centro */
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Formulário */
+.contact-form {
+    width: 50%; /* Mantém o formulário no lado direito */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente no lado direito */
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+/* Botão de enviar */
+.send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.send-btn img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.send-btn:hover img {
+    transform: scale(1.1);
+}
+
+

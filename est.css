@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bangers', Arial, sans-serif; /* Fonte principal */
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-family: 'Bokor', Arial, sans-serif; /* Fonte exclusiva para o título */
+    font-size: 24px;
+    margin: 0;
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.3s ease; /* Transição suave para aparecer */
+}
+
+/* Aparecimento do texto ao passar o mouse */
+.logo:hover h1 {
+    opacity: 1; /* Torna o texto visível */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 80px;
+    padding: 20px;
+    background-image: url('hellokit.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-content {
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.about {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button.yellow {
+    background-color: #FFD700;
+}
+
+.button.red {
+    background-color: #FF6347;
+}
+
+.button.blue {
+    background-color: #40E0D0;
+}
+
+
+
+
+
+
+
+
