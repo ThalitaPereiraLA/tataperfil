@@ -107,3 +107,63 @@ main {
 .contact-info a:hover {
     text-decoration: underline;
 }
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        height: auto; 
+    }
+
+    header {
+        flex-direction: column; 
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .logo {
+        flex-direction: column; 
+        gap: 5px; 
+    }
+
+    .logo-icon {
+        width: 40px; 
+        height: 40px;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px;
+        width: 100%; 
+        align-items: center; 
+    }
+
+    nav a {
+        font-size: 14px; 
+    }
+
+    main {
+        flex-direction: column; 
+        margin-top: 120px; 
+        height: auto; 
+        padding: 10px;
+    }
+
+    .contact-info {
+        width: 100%; 
+        padding: 15px;
+        font-size: 16px; 
+    }
+
+    .contact-info h2 {
+        font-size: 24px; 
+    }
+
+    .contact-info p {
+        font-size: 14px; 
+    }
+
+    .contact-info a {
+        font-size: 14px;
+    }
+}

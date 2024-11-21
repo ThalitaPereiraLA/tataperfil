@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family: 'Bangers', Arial, sans-serif; /* Fonte principal */
+    font-family: 'Bangers', Arial, sans-serif; 
     color: #333;
     background-color: #f9f9f9;
     margin: 0;
@@ -19,7 +20,7 @@ header {
     padding: 20px 40px;
     background-color: #f9f9f9;
     border-bottom: 1px solid #ccc;
-    position: fixed; /* Fixa o cabeçalho no topo */
+    position: fixed; 
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -38,16 +39,16 @@ header {
 }
 
 .logo h1 {
-    font-family: 'Bokor', Arial, sans-serif; /* Fonte exclusiva para o título */
+    font-family: 'Bokor', Arial, sans-serif; 
     font-size: 24px;
     margin: 0;
-    opacity: 0; /* Começa invisível */
-    transition: opacity 0.3s ease; /* Transição suave para aparecer */
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
 }
 
-/* Aparecimento do texto ao passar o mouse */
+
 .logo:hover h1 {
-    opacity: 1; /* Torna o texto visível */
+    opacity: 1; 
 }
 
 nav ul {
@@ -112,7 +113,7 @@ h2 {
 }
 
 p {
-    line-height: 1.6; /* Melhor espaçamento entre linhas */
+    line-height: 1.6; 
 }
 
 .buttons {
@@ -146,7 +147,74 @@ p {
     background-color: #40E0D0;
 }
 
+.button.green {
+    background-color: violet;
+}
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        padding: 10px 20px; 
+        align-items: flex-start;
+    }
+
+    .logo {
+        flex-direction: column; 
+        gap: 5px;
+    }
+
+    .logo-icon {
+        width: 40px; 
+        height: 40px;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px;
+        width: 100%;
+        align-items: flex-start; 
+    }
+
+    nav a {
+        font-size: 14px; 
+    }
+
+    main {
+        flex-direction: column; 
+        margin-top: 120px; 
+        height: auto; 
+    }
+
+    .profile-container {
+        flex-direction: column; 
+        gap: 20px;
+        text-align: center; 
+    }
+
+    .profile-picture {
+        width: 150px; 
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 32px; 
+    }
+
+    .about {
+        font-size: 20px; 
+    }
+
+    .buttons {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .button {
+        width: 100px; 
+        height: 100px;
+        font-size: 14px;
+    }
+}
 
 
 

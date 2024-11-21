@@ -1,4 +1,4 @@
-/* Configuração geral */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +6,15 @@
 }
 
 body {
-    font-family: 'Bangers', Arial, sans-serif; /* Fonte principal */
-    background-image: url('hellokit.jpg'); /* Mesmo fundo do index */
+    font-family: 'Bangers', Arial, sans-serif; 
+    background-image: url('hellokit.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #333;
 }
 
-/* Cabeçalho */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -38,18 +38,18 @@ header {
     width: 30px;
     height: 30px;
     object-fit: contain;
-    cursor: pointer; /* Para indicar que o ícone é clicável */
+    cursor: pointer; 
 }
 
 .logo h1 {
-    font-family: 'Bokor', Arial, sans-serif; /* Fonte personalizada */
+    font-family: 'Bokor', Arial, sans-serif; 
     font-size: 24px;
     margin: 0;
-    opacity: 0; /* Nome invisível inicialmente */
-    transition: opacity 0.3s ease; /* Suavidade ao aparecer/desaparecer */
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
 }
 
-/* Aparecimento do nome no hover */
+
 .logo:hover h1 {
     opacity: 1;
 }
@@ -66,27 +66,27 @@ nav a {
     font-size: 16px;
 }
 
-/* Centralização do conteúdo */
+
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 80px); /* Altura total menos o cabeçalho */
+    height: calc(100vh - 80px);
     padding: 20px;
-    margin-top: 80px; /* Espaço para o cabeçalho */
+    margin-top: 80px; 
 }
 
-/* Card com perfil */
+
 .card {
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    background-color: rgba(255, 255, 255, 0.9); 
     border-radius: 10px;
     padding: 40px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 60%; /* Card maior, 60% da largura */
+    max-width: 60%; 
 }
 
-/* Foto de perfil */
+
 .profile-picture {
     width: 300px; 
     height: 300px; 
@@ -97,25 +97,25 @@ nav a {
 }
 
 
-/* Títulos e textos */
+
 h2 {
-    font-size: 36px; /* Título maior */
+    font-size: 36px; 
     margin: 10px 0;
 }
 
 .role {
-    font-size: 22px; /* Texto maior */
+    font-size: 22px; 
     font-weight: bold;
     color: #666;
     margin-bottom: 20px;
 }
 
 .card p {
-    font-size: 20px; /* Aumenta o tamanho do texto */
+    font-size: 20px; 
     line-height: 1.6;
 }
 
-/* Redes sociais */
+
 .social-media {
     margin-top: 20px;
     display: flex;
@@ -131,27 +131,26 @@ h2 {
 }
 
 .social-media a:hover {
-    color: #007bff; /* Azul no hover */
+    color: #007bff; 
 }
 
-/* Box específica do Projeto 1 */
+
 .project-box {
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
-    border-radius: 15px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px; 
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin: 20px 0;
-    text-align: center; /* Centraliza o texto e a imagem */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao passar o mouse */
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-/* Link da box */
 .project-box a {
-    text-decoration: none; /* Remove sublinhado */
-    color: inherit; /* Mantém a cor padrão do texto */
+    text-decoration: none; 
+    color: inherit; 
 }
 
-/* Título do projeto */
+
 .project-box .project-title {
     font-size: 22px;
     font-weight: bold;
@@ -159,17 +158,17 @@ h2 {
     color: #007bff;
 }
 
-/* Imagem do projeto */
+
 .project-box .project-image {
     width: 100%;
-    max-width: 300px; /* Limita a largura da imagem */
+    max-width: 300px; 
     height: auto;
-    border-radius: 10px; /* Bordas arredondadas para a imagem */
-    margin: 15px 0; /* Espaço acima e abaixo da imagem */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve na imagem */
+    border-radius: 10px;
+    margin: 15px 0; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Descrição do projeto */
+
 .project-box .project-description {
     font-size: 16px;
     color: #555;
@@ -177,9 +176,67 @@ h2 {
     line-height: 1.5;
 }
 
-/* Efeito hover para a box */
+
 .project-box:hover {
-    transform: scale(1.02); /* Leve aumento no tamanho */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    transform: scale(1.02); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        padding: 10px 20px;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .content {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 90%; 
+        padding: 20px;
+    }
+
+    .profile-picture {
+        width: 150px; 
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 28px; 
+    }
+
+    .role {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px; 
+    }
+
+    .project-box {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .project-box .project-title {
+        font-size: 18px; 
+    }
+
+    .project-box .project-image {
+        max-width: 100%; 
+    }
+
+    .project-box .project-description {
+        font-size: 14px; 
+    }
+}
