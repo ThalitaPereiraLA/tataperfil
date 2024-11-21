@@ -1,0 +1,13 @@
+
+*.log
+*.ini
+
+
+../sendmail/
+../php/
+../apache/
+
+
+.DS_Store
+.idea/
+.vscode/
